@@ -1,0 +1,176 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/*Navigation bar:Logo and Image  */
+#logo{
+    margin: 12px 20px;
+}
+#logo img{
+    height: 40px;
+    width: 50px;
+    margin: 3px 6px;
+}
+
+/* Navigation bar:lists styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color:rgb(221, 170, 74);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    color:white;
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    border-bottom: 20px;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    height: 246px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../photos/food2.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    text-align: center;
+}
+#home p{
+    font-size: 2.3 rem;
+    text-align: center;
+}
+
+ /* utility class */
+.h-primary{
+     font-size: 2.8rem;
+     padding: 12px;
+ }
+ .btn{
+     padding: 6px 20px;
+     border:2px solid white ;
+     border-radius: 12px;
+     font-size: medium;
+     background-color:brown;
+    margin: 17px;
+ }
+ .btn:hover{
+    color: white;
+    background-color: rgb(173, 61, 16);
+    cursor: pointer;
+ }
+
+ .servicesContainer{
+    
+    background-color: #e9ce98;
+    margin: 77px 0px 0px 0px;
+    text-align: center;
+    ;
+    
+ }
+ .h-primaryCenter{
+    font-size: 2.8rem;
+    padding: 12px ;
+ }
+ .services{
+     
+     display: flex;
+ }
+ .box{
+     margin: 6px;
+     border:4px solid black;
+     border-radius: 10px;
+ }
+ #b1 img{
+     height: 160px;
+     width: 227px;
+ }
+ #b2 img{
+    height: 160px;
+    width: 227px;
+}
+#b3 img{
+    height: 160px;
+    width: 212px;
+}
+ .climg{
+    font-size: 2.8rem;
+    padding: 12px ;
+ }
+ #clients{
+     border: 2px solid black;
+     text-align: center;
+ }
+.clientBox{
+    display: flex;
+    justify-content: center;
+}
+#c1 img{
+    height: 100px;
+    width: 100px;
+}
+
+.cb{
+    margin: 6px;
+    border:4px solid black;
+    border-radius: 10px;
+}
+#contactUs{
+    text-align: center;
+    border: 2px solid black;
+    background: url('../photos/contact-us_36325-2135.jpg');
+}
+.submit{
+    background-color: black;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+
+}
+ 
